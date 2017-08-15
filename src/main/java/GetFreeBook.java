@@ -6,9 +6,9 @@ import org.openqa.selenium.interactions.Actions;
 
 public class GetFreeBook {
 
-    String userName = "**********";
+    String userName = "***********";
 
-    String passWord = "*********";
+    String passWord = "**********";
 
 
    private WebDriver webDriver;
@@ -56,7 +56,13 @@ public class GetFreeBook {
             e.printStackTrace();
         }
 
-        webDriver.findElement(By.cssSelector("#packt-freelearning-submit-claim > div")).click();
+        webDriver.findElement(By.xpath("//*[@id=\"free-learning-claim\"]")).click();
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
 
 

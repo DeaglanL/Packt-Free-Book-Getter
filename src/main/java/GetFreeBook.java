@@ -6,9 +6,9 @@ import org.openqa.selenium.interactions.Actions;
 
 public class GetFreeBook {
 
-    String userName = "procopis.achilleos@qa.com";
+    String userName = "****************";
 
-    String passWord = "Shadowgrey4";
+    String passWord = "**************";
 
 
    private WebDriver webDriver;
